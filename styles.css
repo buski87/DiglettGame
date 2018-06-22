@@ -2,7 +2,9 @@
 
   text-align: center;
 }
-
+body{
+  cursor: url(pokeball.png), url(cursor.cur), pointer;
+}
 .container{
 display:flex;
 flex-wrap: wrap;
@@ -51,4 +53,24 @@ margin-left: 500px;
   height: 100%;
   background-repeat: no-repeat;
 
+}
+
+#ball{
+  position:fixed;
+  width: 50px;
+  height: 50px;
+  float:left;
+  margin-left: -120px;
+  margin-top: -5px;
+  display: none;
+}
+
+.button{
+  position: fixed;
+  left: 650px;
+  top: 700px; 
+  display: none;  
+  width: 100px;
+  height: 50px;
+  background-color: rgb(90, 141, 218);
 }

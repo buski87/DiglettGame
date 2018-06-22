@@ -5,6 +5,7 @@ var clock = setInterval(function() {
     console.log(i);
   } else {
     $( ".game-over" ).toggle();
+    $( ".button" ).toggle();
     clearInterval(clock);
   }
   i--;
@@ -13,6 +14,7 @@ var clock = setInterval(function() {
 // start con imagen 
     $( ".start" ).click(function() {
       $( ".start" ).toggle();
+      $('#ball').toggle();
     });
     
     // controla el tiempo en el html 
@@ -40,3 +42,7 @@ var clock = setInterval(function() {
       Timer(Minute, display);
   });
   
+  // try again button
+  function refreshPage(){
+    window.location.reload();
+  }
